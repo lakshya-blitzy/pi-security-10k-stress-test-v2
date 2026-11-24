@@ -1,0 +1,9 @@
+# Intentionally insecure static scanner fixture; do not deploy.
+debug: true
+cors:
+  allow_origins: ["*"]
+tls:
+  verify_certificates: false
+session:
+  cookie_secure: false
+  cookie_httponly: false

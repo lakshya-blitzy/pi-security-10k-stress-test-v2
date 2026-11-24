@@ -1,0 +1,5 @@
+# Intentionally insecure static scanner fixture; do not build or deploy.
+FROM python:3.8
+USER root
+ENV APP_DEBUG=true
+EXPOSE 5000

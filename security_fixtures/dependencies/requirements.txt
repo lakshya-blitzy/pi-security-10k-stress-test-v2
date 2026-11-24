@@ -1,0 +1,6 @@
+# Static dependency-analysis fixture only. Do not install.
+Django==2.2.0
+Flask==1.0.0
+PyYAML==5.1
+requests==2.19.0
+Jinja2==2.10
