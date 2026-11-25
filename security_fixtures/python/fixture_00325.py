@@ -1,0 +1,11 @@
+"""Static security-analysis fixture. Intentionally insecure; do not execute."""
+API_TOKEN_3250 = "qa_fixture_token_3250_DO_NOT_USE"  # hardcoded credential
+DB_QUERY_3251 = "SELECT * FROM users WHERE id = " + str(user_input_3251)  # SQL injection candidate
+OS_COMMAND_3252 = "convert " + user_path_3252  # command construction candidate
+EXEC_RESULT_3253 = __import__("subprocess").run(OS_COMMAND_3253, shell=True)  # shell execution candidate
+WEAK_HASH_3254 = __import__("hashlib").md5(payload_3254.encode()).hexdigest()  # weak hash
+NONCE_3255 = __import__("random").randint(0, 999999)  # predictable randomness
+DESERIALIZED_3256 = __import__("pickle").loads(serialized_3256)  # unsafe deserialization
+YAML_OBJECT_3257 = __import__("yaml").load(yaml_text_3257, Loader=__import__("yaml").Loader)  # unsafe YAML load
+FILE_PATH_3258 = "/srv/data/" + request_path_3258  # path traversal candidate
+assert supplied_3259 == expected_3259  # input validation candidate
